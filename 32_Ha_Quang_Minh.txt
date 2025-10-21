@@ -1,0 +1,459 @@
+Administrator@Admin MINGW64 ~
+$ cd desktop
+
+Administrator@Admin MINGW64 ~/desktop
+$ git clone https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+Cloning into '32_Ha_Quang_Minh_bai_tap'...
+warning: You appear to have cloned an empty repository.
+
+Administrator@Admin MINGW64 ~/desktop
+$ cd 32_Ha_Quang_Minh_bai_tap
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ touch README.md
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ notepad README.md
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git add README.md
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git commit -m "Them noi dung Lorem Ipsum vào README.md"
+[main (root-commit) 934cae0] Them noi dung Lorem Ipsum vào README.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 README.md
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 615 bytes | 615.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ * [new branch]      main -> main
+
+
+
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF
+ the next time Git touches it
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git commit -m "Thêm file text_branch_1.txt"
+[branch_1 4d30034] Thêm file text_branch_1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 359 bytes | 359.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap/pull/new/branch
+_1
+remote:
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ * [new branch]      branch_1 -> branch_1
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF
+ the next time Git touches it
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_2)
+$ git commit -m "Thêm file text_branch_2.txt"
+[branch_2 3ef8c99] Thêm file text_branch_2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap/pull/new/branch
+_2
+remote:
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ * [new branch]      branch_2 -> branch_2
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_3)
+$ cho "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+bash: cho: command not found
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_3)
+$ git add text_branch_3.txt
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF
+ the next time Git touches it
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_3)
+$ git commit -m "Thêm file text_branch_3.txt"
+[branch_3 70eb520] Thêm file text_branch_3.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 359 bytes | 359.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap/pull/new/branch
+_3
+remote:
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ * [new branch]      branch_3 -> branch_3
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante" > text_branch_4.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_4)
+$ git add text_branch_4.txt
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF
+ the next time Git touches it
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_4)
+$ git commit -m "Thêm file text_branch_4.txt"
+[branch_4 618247e] Thêm file text_branch_4.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap/pull/new/branch
+_4
+remote:
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ * [new branch]      branch_4 -> branch_4
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch --delete branch_4
+error: the branch 'branch_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_4'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 618247e).
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch --list
+  branch_1
+  branch_2
+  branch_3
+* main
+
+
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git pull
+Already up to date.
+
+
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ mkdir main_folder
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ cd main_folder
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap/main_folder (main)
+$ echo "Nội dung file 1" > main_txt_1.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap/main_folder (main)
+$ echo "Nội dung file 2" > main_txt_2.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap/main_folder (main)
+$ echo "Nội dung file 3" > main_txt_3.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap/main_folder (main)
+$ cd ..
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git add main_folder
+warning: in the working copy of 'main_folder/main_txt_1.txt', LF will be replace
+d by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_2.txt', LF will be replace
+d by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_3.txt', LF will be replace
+d by CRLF the next time Git touches it
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git commit -m "Thêm thư mục main_folder và 3 file txt vào nhánh main"
+[main 57696aa] Thêm thư mục main_folder và 3 file txt vào nhánh main
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch -M main
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 504 bytes | 504.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+   934cae0..57696aa  main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+
+
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada vel dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis ante, euismod quis pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula auctor viverra. Phasellus dignissim mollis leo, vitae tristique enim." > text_branch_1.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_5)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF
+ the next time Git touches it
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_5)
+$ git commit -m "Chỉnh sửa nội dung file text_branch_1.txt trong branch_5"
+[branch_5 2c43e75] Chỉnh sửa nội dung file text_branch_1.txt trong branch_5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 980 bytes | 980.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap/pull/new/branch
+_5
+remote:
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ * [new branch]      branch_5 -> branch_5
+
+
+
+
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git pull origin main
+From https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git pull origin main
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 4.62 KiB | 135.00 KiB/s, done.
+From https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap
+ * branch            main       -> FETCH_HEAD
+   57696aa..037e131  main       -> origin/main
+Updating 57696aa..037e131
+Fast-forward
+ text_branch_1.txt | 1 +
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 1 +
+ 4 files changed, 4 insertions(+)
+ create mode 100644 text_branch_1.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ ls
+README.md     text_branch_1.txt  text_branch_3.txt
+main_folder/  text_branch_2.txt  text_branch_4.txt
+
+
+
+
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch
+  branch_1
+  branch_2
+  branch_3
+  branch_5
+* main
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch -d branch_2
+Deleted branch branch_2 (was 3ef8c99).
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch -d branch_3
+Deleted branch branch_3 (was 70eb520).
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch -d branch_35
+error: branch 'branch_35' not found
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git branch -d branch_5
+Deleted branch branch_5 (was 2c43e75).
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git push origin --delete branch_2
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ - [deleted]         branch_2
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git push origin --delete branch_3
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ - [deleted]         branch_3
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git push origin --delete branch_4
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+ - [deleted]         branch_4
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git fetch --prune
+From https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap
+ - [deleted]         (none)     -> origin/branch_5
+   4d30034..b24db96  branch_1   -> origin/branch_1
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git fetch --prune
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git pull origin main
+From https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap
+ * branch            main       -> FETCH_HEAD
+Updating b4ef0bb..037e131
+Fast-forward
+ text_branch_1.txt | 2 +-
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 1 +
+ 4 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git merge main
+Already up to date.
+
+Administrator@Admin MINGW64 ~/desktop/32_Ha_Quang_Minh_bai_tap (branch_1)
+$ git push origin branch_1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Minh320/32_Ha_Quang_Minh_bai_tap.git
+   b24db96..037e131  branch_1 -> branch_1
